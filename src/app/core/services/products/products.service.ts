@@ -1,6 +1,6 @@
 import { StringMap } from '@angular/compiler/src/compiler_facade_interface';
 import { Injectable } from '@angular/core';
-import { Product } from './product.model';
+import { Product } from './../../../product.model';
 
 
 @Injectable({

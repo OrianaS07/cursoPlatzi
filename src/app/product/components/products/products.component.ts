@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from './../product.model';
+import { Component, OnInit} from '@angular/core';
+import { Product } from '../../../product.model';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
+
 export class ProductsComponent implements OnInit {
 
   products: Product[] = [
@@ -58,6 +59,7 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line: typedef
   clickProduct(id: number){
     console.log('product');
     console.log(id);
