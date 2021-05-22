@@ -10,8 +10,8 @@
         <p>{{product?.description | slice:0:10}}</p>
     </mat-card-content>
     <mat-card-actions>
-        <a mat-raised-button [routerLink]="['/product','product.id']">Ver Detalle</a>
-        <button mat-raised-button color="primary" (click)="addCart()">Comprar</button>
+        <a mat-raised-button [routerLink]="['/products',product?.id]">Ver Detalle</a>
+        <button mat-raised-button color="primary" (click)="addCart()">Añadir al Carrito</button>
     </mat-card-actions>
 </mat-card>
 
